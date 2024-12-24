@@ -1,7 +1,6 @@
-# TwitSafe
-A Machine Learning-Based Cyberbullying Detection System for Twitter
+# TwitSafe: A Machine Learning-Based Cyberbullying Detection System for Twitter
 
-TwitSafe is a research-driven project designed to detect cyberbullying on Twitter using advanced machine learning techniques. This repository contains the implementation of the project, including data preprocessing, model training, evaluation, and the corresponding research paper.
+TwitSafe is a research-driven project designed to detect cyberbullying on Twitter using advanced machine learning techniques. This repository contains the implementation of the project, including the web application, machine learning models, and the corresponding research paper.
 
 ---
 
@@ -18,10 +17,10 @@ If citing this work, please use the following format:
 
 ## 🚀 Features
 
-- **Data Preprocessing**: Handles raw Twitter data to prepare it for model training.
-- **Machine Learning Models**: Implements various ML algorithms for text classification.
-- **Evaluation Metrics**: Includes precision, recall, F1-score, and confusion matrix for detailed model evaluation.
-- **Interactive Visualizations**: Visualizes dataset distributions and model performance.
+- **Web Interface**: A user-friendly web app to detect cyberbullying in text.
+- **Machine Learning Models**: Pre-trained Logistic Regression and Naive Bayes models for text classification.
+- **Dataset**: A curated dataset for cyberbullying detection.
+- **Model Files**: Includes pre-trained models and vectorizer for easy deployment.
 
 ---
 
@@ -30,12 +29,16 @@ If citing this work, please use the following format:
 ```
 TwitSafe/
 │
-├── datasets/          # Contains raw and processed Twitter data
-├── models/            # Trained models and saved configurations
-├── scripts/           # Python scripts for preprocessing, training, and evaluation
-├── docs/              # Research paper and supplementary materials
-├── results/           # Outputs, logs, and visualizations
-└── README.md          # Project documentation
+├── templates/          # Contains HTML templates for the web application
+│   └── index.html      # Main web interface
+├── app.py              # Flask application to run the web app
+├── cyberbullying_data.csv # Dataset used for training and testing
+├── log_reg_model.pkl   # Pre-trained Logistic Regression model
+├── nb_model.pkl        # Pre-trained Naive Bayes model
+├── vectorizer.pkl      # Vectorizer for text preprocessing
+├── main.ipynb          # Jupyter notebook for experimentation and training
+├── TwitSafe_Paper.pdf  # Research paper on the project
+└── README.md           # Project documentation
 ```
 
 ---
@@ -53,48 +56,28 @@ TwitSafe/
    pip install -r requirements.txt
    ```
 
-3. Download the dataset:
-   - Add the dataset to the `cyberbullying_data.csv` file.
-
-4. Run the preprocessing script:
+3. Run the Flask web application:
    ```bash
-   python scripts/preprocess.py
+   python app.py
    ```
 
-5. Train the model:
-   ```bash
-   python scripts/train.py
+4. Open the web app in your browser:
    ```
-
-6. Evaluate the model:
-   ```bash
-   python scripts/evaluate.py
+   http://127.0.0.1:5000
    ```
 
 ---
 
 ## 💻 Usage
 
-- **Detect Cyberbullying**: 
-   Use the pre-trained model to detect cyberbullying in custom datasets or real-time Twitter data:
-   ```bash
-   python scripts/detect.py --input your_twitter_data.csv
-   ```
-
-- **Interactive Dashboard**: 
-   Start a web dashboard to visualize results:
-   ```bash
-   streamlit run scripts/dashboard.py
-   ```
+- **Web Application**: Enter text in the web interface to check if it contains cyberbullying.
+- **Notebook**: Use `main.ipynb` for model training, evaluation, and experimentation.
 
 ---
 
 ## 📊 Results and Visualizations
 
-Key results and visualizations are available in the `results/` folder, showcasing:
-- Dataset analysis
-- Model performance metrics
-- Case studies of detected tweets
+The results of the trained models, along with metrics such as precision, recall, and F1-score, are detailed in the research paper. Additional visualizations can be created using the notebook.
 
 ---
 
