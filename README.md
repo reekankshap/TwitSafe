@@ -10,7 +10,18 @@ For detailed insights into the methodology, experiments, and findings of this pr
 If citing this work, please use the following format:
 
 ```
-[Your Citation Format Here – Add BibTeX or other formats]
+[@article{twitsafe2024,
+    title={TwitSafe: A Machine Learning-Based Cyberbullying Detection System for Twitter},
+    author={Keerthana Shankar and Lakshmi Shree A and Prerana K N and Reekanksha Prakash and V Satish},
+    journal={International Journal of Research Publication and Reviews},
+    volume={5},
+    number={12},
+    pages={4162--4166},
+    year={2024},
+    publisher={www.ijrpr.com},
+    issn={2582-7421}
+}
+]
 ```
 
 ---
@@ -103,7 +114,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 If you find this project helpful, please consider citing our work:
 ```
-[Your Citation Here]
+[@article{shankar2024twitsafe, author = {Keerthana Shankar, Lakshmi Shree A, Prerana K N, Reekanksha Prakash, V Satish}, title = {TwitSafe: A Machine Learning-Based Cyberbullying Detection System for Twitter}, journal = {International Journal of Research Publication and Reviews}, volume = {5}, number = {12}, pages = {4162--4166}, year = {2024}, month = {December}, issn = {2582-7421}, url = {http://www.ijrpr.com} }]
 ```
 
 ---
